@@ -19,42 +19,18 @@ tags: [writeup]     # TAG names should always be lowercase
 Khi ta truy cập vào trang web trên thì hiển thị trước mắt chúng ta là một trang web liên quan đến chủ để hoạt hình và các bài viết không có gì đặc biệt.
 Quay lại với file config thì khi mở file config ta được nội dung như sau:
 
-```plain text
-events {
-    worker_connections 1024;
-}
-
-http {
-    include mime.types;
-
-    server {
-        listen 80;
-        server_name localhost;
-
-        root /app/src/html/;
-        index index.html;
-
-
+```
         location /images {
             alias /app/src/images/;
             autoindex on;
         }
-
-        location /ponies/ {
-            alias /app/src/ponies/;
-        }
-
-        location /resources/ {
-            alias /app/src/resources/;
-        }
-
+```
+```
         location /secretbackend/ {
             proxy_pass http://secretbackend:3000/;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
         }
-    }
-}
 ```
 
 Để ý ở đoạn code trên có hai phần khá đặc biệt. Thứ nhất là phần `autoindex on;` tại vị trí `/images` và sau vài đường google thì mình biết được tham số trên sẽ liệt kê toàn bộ thư mục và file nằm bên trong nó. Điểm đặc biệt thứ hai đó là vị trí `/secretbackend/` nơi đây được cấu hình một reverse proxy. Thử truy cập vào http://exp.cybergame.sk:7000/secretbackend/ ta nhận được kết quả là một trang Basic Authentication như bên dưới.
