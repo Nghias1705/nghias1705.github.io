@@ -16,10 +16,10 @@ timezone:
 
 title: Trần Văn Nghĩa # the main title
 
-tagline: Blog chia sẻ về những kiến thức mình học được trong ngành an toàn thông tin. # it will display as the subtitle
+tagline: Blog này là nơi chia sẻ về những kiến thức mình học được trong ngành an toàn thông tin. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Blog chia sẻ về những kiến thức mình học được trong ngành an toàn thông tin.
+  Blog này là nơi chia sẻ về những kiến thức mình học được trong ngành an toàn thông tin.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -98,11 +98,11 @@ theme_mode: dark
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/lib/avatar.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+social_preview_image: /assets/lib/avatar.jpg # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
