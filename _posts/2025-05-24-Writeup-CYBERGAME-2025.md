@@ -19,13 +19,14 @@ tags: [writeup]     # TAG names should always be lowercase
 Khi ta truy cập vào trang web trên thì hiển thị trước mắt chúng ta là một trang web liên quan đến chủ để hoạt hình và các bài viết không có gì đặc biệt.
 Quay lại với file config thì khi mở file config ta được nội dung như sau:
 
-```
+```config
         location /images {
             alias /app/src/images/;
             autoindex on;
         }
 ```
-```
+
+```config
         location /secretbackend/ {
             proxy_pass http://secretbackend:3000/;
             proxy_set_header Host $host;
@@ -55,7 +56,7 @@ _thư mục secretbackend_
 
 trong đó phần `public` chính là trang hiện lên khi chúng ta truy cập vào http://exp.cybergame.sk:7000/secretbackend/ và `index.js` là file chứa cấu hình chính của sever reverse proxy này. Trong đó có một chuỗi base64encode để xác thực Basic Authentication đó là `cHIxbmNlc3M6U0stQ0VSVHswZmZfYnlfNF9zMW5nbGVfc2w0c2hfZjgzNmE4YjF9`
 giải mã ra ta được `pr1ncess:SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}` và `SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}` chính là cờ của thử thách con đầu tiên. Tiếp tục đến với thử thác con thứ hai nào!!!
-> FLAG: SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}
+>####  FLAG: SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}
 -----
 
 
