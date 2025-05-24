@@ -25,7 +25,6 @@ Quay lại với file config
             autoindex on;
         }
 ```
-
 ```config
         location /secretbackend/ {
             proxy_pass http://secretbackend:3000/;
@@ -56,9 +55,11 @@ _thư mục secretbackend_
 
 trong đó phần `public` chính là trang hiện lên khi chúng ta truy cập vào http://exp.cybergame.sk:7000/secretbackend/ và `index.js` là file chứa cấu hình chính của sever reverse proxy này. Trong đó có một chuỗi base64encode để xác thực Basic Authentication đó là `cHIxbmNlc3M6U0stQ0VSVHswZmZfYnlfNF9zMW5nbGVfc2w0c2hfZjgzNmE4YjF9`
 giải mã ra ta được `pr1ncess:SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}` và `SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}` chính là cờ của thử thách con đầu tiên. Tiếp tục đến với thử thác con thứ hai nào!!!
+
 >#####  FLAG: SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}
+
+
 -----
 
 
 #### 2. Equestria - Shadow Realm
-> Sắp cập nhật :v
