@@ -1,6 +1,6 @@
 ---
 title: Writeup Giải CyberGame 2025
-date: 2025-05-24 22:30:00 +/-TTTT
+date: 2025-05-24 22:30:00 +/-0700
 categories: [Web, Reverse, Forensic]
 tags: [WriteUp]     # TAG names should always be lowercase
 ---
