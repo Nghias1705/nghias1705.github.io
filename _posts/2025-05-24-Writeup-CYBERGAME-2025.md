@@ -1,7 +1,7 @@
 ---
 title: Writeup Giải CyberGame 2025
 date: 2025-05-24 22:30:00 +0700
-categories: [web, reverse, forensic]
+categories: [web]
 tags: [writeup]     # TAG names should always be lowercase
 ---
 # CYBERGAME 2025
