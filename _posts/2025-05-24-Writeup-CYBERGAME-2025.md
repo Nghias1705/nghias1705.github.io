@@ -19,8 +19,7 @@ tags: [writeup]     # TAG names should always be lowercase
 Khi ta truy cập vào trang web trên thì hiển thị trước mắt chúng ta là một trang web liên quan đến chủ để hoạt hình và các bài viết không có gì đặc biệt.
 Quay lại với file config thì khi mở file config ta được nội dung như sau:
 
-```config code
-
+```plain text
 events {
     worker_connections 1024;
 }
@@ -56,13 +55,11 @@ http {
         }
     }
 }
-
 ```
 
 Để ý ở đoạn code trên có hai phần khá đặc biệt. Thứ nhất là phần `autoindex on;` tại vị trí `/images` và sau vài đường google thì mình biết được tham số trên sẽ liệt kê toàn bộ thư mục và file nằm bên trong nó. Điểm đặc biệt thứ hai đó là vị trí `/secretbackend/` nơi đây được cấu hình một reverse proxy. Thử truy cập vào http://exp.cybergame.sk:7000/secretbackend/ ta nhận được kết quả là một trang Basic Authentication như bên dưới.
 
-![Form yêu cầu đăng nhập](/assets/2025-05-24-Writeup%20CYBERGAME%202025/Basic%20Auth.png)
-
+``![Form yêu cầu đăng nhập](/assets/2025-05-24-Writeup%20CYBERGAME%202025/Basic%20Auth.png)
 _form đăng nhập_
 
 mình thử đăng một số username và passwd như admin:admin, root:root thì đều không nhận được kết quả nên mình đã chuyển sang hướng khai thác khác đó là chú trọng vào thư mục `images`. Thử truy cập vào http://exp.cybergame.sk:7000/images/ thì nhận được kết quả như sau:
