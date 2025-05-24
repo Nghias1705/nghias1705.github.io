@@ -1,8 +1,8 @@
 ---
 title: Writeup Giải CyberGame 2025
-date: 2025-05-24 22:30:00 +/-0700
-categories: [Web, Reverse, Forensic]
-tags: [WriteUp]     # TAG names should always be lowercase
+date: 2025-05-24 22:30:00 +0700
+categories: [web, reverse, forensic]
+tags: [writeup]     # TAG names should always be lowercase
 ---
 # CYBERGAME 2025
 Đây là một giải CTF diễn gia trong thời gian khá là dài nên mình có nhiều thời gian để giải các thử thách được đặt ra và theo cảm nhận của mình thì giải này có nhiều thử thách khá là khó và thú vị. Mục đích mình viết bài này là để tổng hợp những kiến thức mình đã học được thông qua các thử thách của giải trên và cũng như chia sẻ đến với mọi người cùng tham khảo 
