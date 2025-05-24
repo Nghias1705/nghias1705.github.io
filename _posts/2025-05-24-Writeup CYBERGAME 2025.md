@@ -11,6 +11,7 @@ tags: [WriteUp]     # TAG names should always be lowercase
 ## Web Exploitation and Binary Exploitation
 > Ở mảng này thì gồm có 3 thử thách lớn và các thử thác nhỏ trong mỗi thử thách lớn. Đến hiện tại mình đã giải gần xong hai thử thách lớn nên sẽ viết trước Writeup về những phần này. Những thử thách còn lại mình sẽ cập nhật sau (nếu minh giải được)
 ### I. Equestria - Độ khó [★★☆]
+---
 #### 1. Equestria - Door To The Stable 
 Ở thử thách này thì đề bài cho chúng ta một file config của sever: [nginx.conf](/_posts/2025-05-24-Writeup%20CYBERGAME%202025/nginx.conf) và thử thách được đặt tại http://exp.cybergame.sk:7000/.
 Khi ta truy cập vào trang web trên thì hiển thị trước mắt chúng ta là một trang web liên quan đến chủ để hoạt hình và các bài viết không có gì đặc biệt.
@@ -63,6 +64,6 @@ khi truy cập vào `secretbackend` ta có các file như sau
 trong đó phần `public` chính là trang hiện lên khi chúng ta truy cập vào http://exp.cybergame.sk:7000/secretbackend/ và `index.js` là file chứa cấu hình chính của sever reverse proxy này. Trong đó có một chuỗi base64encode để xác thực Basic Authentication đó là `cHIxbmNlc3M6U0stQ0VSVHswZmZfYnlfNF9zMW5nbGVfc2w0c2hfZjgzNmE4YjF9`
 giải mã ra ta được `pr1ncess:SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}` và `SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}` chính là cờ của thử thách con đầu tiên. Tiếp túc tục đến với thử thác con thứ hai nào!!!
 > FLAG: SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}
-
+---
 #### 2. Equestria - Shadow Realm
 > Sắp cập nhật :v
