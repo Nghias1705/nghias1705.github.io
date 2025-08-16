@@ -148,7 +148,9 @@ pwa:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
-baseurl: "" # The base URL of the site, leave it empty if the site is hosted at the root of the domain.
+
+# The base URL of your site
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -224,7 +226,3 @@ jekyll-archives:
     category: /categories/:name/
 plugins:
   - jekyll-postfiles
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate-v2
