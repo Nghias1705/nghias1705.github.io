@@ -4,8 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## Giới thiệu
-
 Chào mừng đến với blog của mình!
 
 Mình là **Trần Văn Nghĩa**, một người đam mê khám phá và học hỏi trong lĩnh vực an toàn thông tin. Blog này là nơi mình ghi lại hành trình học tập, chia sẻ các kiến thức về CTF, phân tích lỗ hổng và các chủ đề thú vị khác trong ngành.
