@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: custom_categories
 icon: fas fa-stream
 order: 1
 ---
