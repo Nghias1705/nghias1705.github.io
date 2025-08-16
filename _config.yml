@@ -216,4 +216,13 @@ exclude:
   - "*.config.js"
   - "package*.json"
 
-plugins: []
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+plugins:
+  - jekyll-postfiles
