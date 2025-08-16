@@ -148,9 +148,7 @@ pwa:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
-
-# The base URL of your site
-baseurl: ""
+baseurl: "" # The base URL of the site, leave it empty if the site is hosted at the root of the domain.
 
 # ------------ The following options are not recommended to be modified ------------------
 

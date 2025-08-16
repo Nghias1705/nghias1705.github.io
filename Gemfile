@@ -9,7 +9,6 @@ gem 'jekyll-postfiles'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
-gem 'jekyll-paginate-v2'
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
