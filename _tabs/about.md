@@ -6,7 +6,7 @@ order: 4
 
 Chào mừng đến với blog của mình!
 
-Mình là **Trần Văn Nghĩa**, một người đam mê khám phá và học hỏi trong lĩnh vực an toàn thông tin. Blog này là nơi mình ghi lại hành trình học tập, chia sẻ các kiến thức về CTF, phân tích lỗ hổng và các chủ đề thú vị khác trong ngành.
+Mình là **Trần Văn Nghĩa**, một người đang học tập trong lĩnh vực an toàn thông tin. Blog này là nơi mình ghi lại hành trình học tập, chia sẻ các kiến thức về CTF, phân tích lỗ hổng và các chủ đề thú vị khác trong ngành mà mình tìm hiều được!
 
 ### Mục tiêu của blog
 
@@ -14,6 +14,13 @@ Mình là **Trần Văn Nghĩa**, một người đam mê khám phá và học h
 - Chia sẻ và trao đổi với cộng đồng.
 - Tạo nguồn tài liệu tham khảo cho những ai cùng đam mê.
 
+{%
+  include embed/youtube.html
+  id='kICh_d6tHQk'
+  autoplay=true
+  loop=true
+  muted=true
+%}
 ### Liên hệ
 
 Bạn có thể kết nối với mình qua:
