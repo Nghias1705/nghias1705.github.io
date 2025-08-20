@@ -15,11 +15,11 @@ Mình là **Trần Văn Nghĩa**, một người đang học tập trong lĩnh v
 - Tạo nguồn tài liệu tham khảo cho những ai cùng đam mê.
 
 {%
-  include embed/youtube.html
-  id='kICh_d6tHQk'
-  autoplay=true
-  loop=true
-  muted=true
+    include embed/youtube.html
+    id='kICh_d6tHQk'
+    autoplay=true
+    loop=true
+    muted=true
 %}
 ### Liên hệ
 
